@@ -13,6 +13,7 @@ namespace Project1
             //LessonOne();
             //LessonTwo();
             LessonThree();
+            Console.ReadKey();
         }
 
         static void LessonOne()
@@ -66,8 +67,12 @@ namespace Project1
         static void LessonThree()
         {
             //lesson three code
-
+            Nucleus sebastian = new Nucleus(24, 8);
+            Console.WriteLine(String.Format("nucleus : {0}, {1}, {2}", sebastian.EnzymeCount, sebastian.NucleotideCount, sebastian.Color));
+            
+            Console.WriteLine(sebastian);
         }
+
     }
 }
 
