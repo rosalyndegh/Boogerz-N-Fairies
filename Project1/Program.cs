@@ -71,6 +71,8 @@ namespace Project1
             Console.WriteLine(String.Format("nucleus : {0}, {1}, {2}", sebastian.EnzymeCount, sebastian.NucleotideCount, sebastian.Color));
             
             Console.WriteLine(sebastian);
+            Bacteria bactatank = new Bacteria();
+            Console.WriteLine(bactatank);
         }
 
     }

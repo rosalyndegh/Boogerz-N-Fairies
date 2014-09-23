@@ -8,5 +8,12 @@ namespace Project1
 {
     class Bacteria
     {
+        private Nucleus nucleus;
+        private int flagellaCount;
+        public Bacteria()
+        {
+            nucleus = new Nucleus(0, 0);
+            flagellaCount = 15;
+        }
     }
 }
