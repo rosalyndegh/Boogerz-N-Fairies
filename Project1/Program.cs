@@ -11,7 +11,8 @@ namespace Project1
         static void Main(string[] args)
         {
             //LessonOne();
-            LessonTwo();
+            //LessonTwo();
+            LessonThree();
         }
 
         static void LessonOne()
@@ -60,6 +61,12 @@ namespace Project1
                 
             }
             Console.ReadKey();
+        }
+
+        static void LessonThree()
+        {
+            //lesson three code
+
         }
     }
 }
