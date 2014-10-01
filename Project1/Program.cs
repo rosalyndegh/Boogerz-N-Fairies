@@ -72,7 +72,9 @@ namespace Project1
             
             Console.WriteLine(sebastian);
             Bacteria bactatank = new Bacteria();
-            Console.WriteLine(bactatank); //Bacteria :
+            
+            Console.WriteLine(bactatank); 
+            //Bacteria :
             //Flagella : <count>
             //Nucleus : <enzyme-count>, <nucleotide-count>, <color>
         }

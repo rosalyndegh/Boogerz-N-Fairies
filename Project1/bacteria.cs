@@ -8,19 +8,27 @@ namespace Project1
 {
     class Bacteria
     {
+        private Nucleus nucleus;
         private int flagellaCount;
         public Bacteria()
         {
-            Nucleus nucleus = new Nucleus(0, 0);
+            nucleus = new Nucleus(0, 0);
             flagellaCount = 15;
 
-            Console.Write(String.Format("Bacteria:\n"));
-            Console.Write(String.Format("   Flagella: {0}\n", flagellaCount));
-            Console.Write(String.Format("   nucleus: {0}, {1}, {2}\n", nucleus.EnzymeCount, nucleus.NucleotideCount, nucleus.Color));
+            
+
+
+           
 
            
            
         }
-       
+        public override String ToString()
+    {
+       return String.Format("Bacteria :\n  Flagella : {0}\n  {1}\n  {2}", flagellaCount, nucleus.ToString(),nucleus.Get_Membrane_Status());
+    }
+    
+        
+    
     }
 }
