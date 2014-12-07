@@ -79,6 +79,15 @@ namespace Project1
             //Nucleus : <enzyme-count>, <nucleotide-count>, <color>
         }
 
+        static void LessonFour()
+        {
+            List<GeneStrandUser> list = new List<GeneStrandUser>();
+            // create a bacteria and a virus
+
+            // add them to the list
+
+            // print out the names of all items in the list
+        }
     }
 }
 

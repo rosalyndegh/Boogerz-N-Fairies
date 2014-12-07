@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project1
 {
-    class Bacteria
+    class Bacteria : GeneStrandUser
     {
         private Nucleus nucleus;
         private int flagellaCount;
