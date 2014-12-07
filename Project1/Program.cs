@@ -68,11 +68,11 @@ namespace Project1
         {
             //lesson three code
             Nucleus sebastian = new Nucleus(24, 8);
-            Console.WriteLine(String.Format("nucleus : {0}, {1}, {2}", sebastian.EnzymeCount, sebastian.NucleotideCount, sebastian.Color));
+            //Console.WriteLine(String.Format("nucleus : {0}, {1}, {2}", sebastian.EnzymeCount, sebastian.NucleotideCount, sebastian.Color));
             
             Console.WriteLine(sebastian);
+
             Bacteria bactatank = new Bacteria();
-            
             Console.WriteLine(bactatank); 
             //Bacteria :
             //Flagella : <count>

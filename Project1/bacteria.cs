@@ -24,9 +24,9 @@ namespace Project1
            
         }
         public override String ToString()
-    {
-       return String.Format("Bacteria :\n  Flagella : {0}\n  {1}\n  {2}", flagellaCount, nucleus.ToString(),nucleus.Get_Membrane_Status());
-    }
+        {
+           return String.Format("Bacteria :\n  Flagella : {0}\n  {1}", flagellaCount, nucleus.ToString());
+        }
     
         
     

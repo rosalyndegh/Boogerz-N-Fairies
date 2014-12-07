@@ -8,10 +8,31 @@ namespace Project1
 {
     class Nucleus
     {
+        private enum MembraneStatus
+        {
+            Has,
+            NotHas
+        }
         private const String DefaultColor = "Purple";
-        private bool hasMembrane = true;
+        private MembraneStatus membraneStatus = MembraneStatus.Has;
 
-        public bool HasMembrane { get { return hasMembrane; } set { hasMembrane = value; } }
+        public bool HasMembrane { 
+            get { 
+                return membraneStatus == MembraneStatus.Has; 
+            }
+            set
+            {
+                if (value)
+                {
+                    membraneStatus = MembraneStatus.Has;
+                }
+                else
+                {
+                    membraneStatus = MembraneStatus.NotHas;
+                }
+            }
+        }
+
         public int NucleotideCount { get; set; }
         public int EnzymeCount { get; set; }
         public String Color { get {
@@ -25,21 +46,10 @@ namespace Project1
             EnzymeCount = enzymeCount;
 
         }
-        public String Get_Membrane_Status() 
-        {
-            if (hasMembrane == true)
-            {
-                return "Has Membrane";
-            }
-            else 
-            { 
-                return "No Membrane"; 
-            }
-        }
 
         public override String ToString()
         {
-            return String.Format("nucleus : {0}, {1}, {2}", this.EnzymeCount, this.NucleotideCount, this.Color);
+            return String.Format("Nucleus : {0}, {1}, {2},  membrane status: {3}", this.EnzymeCount, this.NucleotideCount, this.Color, membraneStatus.ToString());
         }
     }
 }
